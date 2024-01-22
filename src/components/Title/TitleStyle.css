@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    width: calc(100%-250PX);
+  
     right: 0;
     text-align: start;
     color: var(--primary-color);
