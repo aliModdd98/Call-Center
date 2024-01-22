@@ -1,0 +1,72 @@
+.tabs {  
+    display: flex;  
+  }
+  @media (max-width:460px) {
+    .tabs{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .tab {  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white; 
+    color: black;
+    padding: 0.5rem 0;  
+    border: none;
+    cursor: pointer;
+    border-radius: 19px;
+  }
+  .tab:not(:last-child) {
+    border-right: 1px solid var(--primary-color);  
+  }
+  .tab.active {
+    background: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .panel {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    margin: 4% 2%;
+  }
+  .panel.active {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .fsec{
+    width: 50%;
+    text-align: center;
+  }
+  .seSec{
+    width:45%;
+  }
+  .seSec img{
+    height: 100%;
+    width:90%;
+  }
+  .listSys::before{
+    content: "*";
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 5px;
+   
+ 
+  }
+  @media screen and (max-width:600px) {
+    .panel{
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .fsec{
+      width: 90%;
+    }
+    .seSec{
+width: 75%;
+margin: 0 auto;
+    }
+  }

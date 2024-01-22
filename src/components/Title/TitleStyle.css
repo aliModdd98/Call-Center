@@ -1,0 +1,30 @@
+
+.title{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100%-250PX);
+    right: 0;
+    text-align: start;
+    color: var(--primary-color);
+    
+}
+.underTitle{
+position: absolute;
+bottom: -10px;
+width: 15%;
+height: 0;
+left: 0;
+border: 2px solid var(--gold-color);
+}
+.description{
+    white-space: wrap;
+    overflow: hidden; 
+    margin-top: 5%;
+
+}
+.contTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
